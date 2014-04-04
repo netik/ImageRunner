@@ -1,0 +1,35 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<depends_on path='/System/Library/Frameworks/Cocoa.framework'/>
+<depends_on path='/System/Library/Frameworks/Foundation.framework'/>
+<depends_on path='/System/Library/Frameworks/ApplicationServices.framework'/>
+<depends_on path='/System/Library/Frameworks/AppKit.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreServices.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreGraphics.framework'/>
+<depends_on path='/System/Library/Frameworks/CoreFoundation.framework'/>
+<constant name='globalUpdateOK' type='B'/>
+<constant name='kQuartzFilterApplicationDomain' type='@'/>
+<constant name='kQuartzFilterManagerDidAddFilterNotification' type='@'/>
+<constant name='kQuartzFilterManagerDidModifyFilterNotification' type='@'/>
+<constant name='kQuartzFilterManagerDidRemoveFilterNotification' type='@'/>
+<constant name='kQuartzFilterManagerDidSelectFilterNotification' type='@'/>
+<constant name='kQuartzFilterPDFWorkflowDomain' type='@'/>
+<constant name='kQuartzFilterPrintingDomain' type='@'/>
+<class name='QuartzFilter'>
+<method selector='applyToContext:'>
+<retval type='B'/>
+</method>
+</class>
+<class name='QuartzFilterManager'>
+<method selector='selectFilter:'>
+<retval type='B'/>
+</method>
+</class>
+<informal_protocol name='QuartzFilterManagerDelegate'>
+<method selector='quartzFilterManager:didAddFilter:' type='v16@0:4@8@12' type64='v32@0:8@16@24'/>
+<method selector='quartzFilterManager:didModifyFilter:' type='v16@0:4@8@12' type64='v32@0:8@16@24'/>
+<method selector='quartzFilterManager:didRemoveFilter:' type='v16@0:4@8@12' type64='v32@0:8@16@24'/>
+<method selector='quartzFilterManager:didSelectFilter:' type='v16@0:4@8@12' type64='v32@0:8@16@24'/>
+</informal_protocol>
+</signatures>
